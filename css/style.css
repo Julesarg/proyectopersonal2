@@ -123,8 +123,11 @@ main {
     display: flex;
     justify-content: flex-end;
     width: 50%;
+    height: 100%;
   }
   .containerIndex .fixedTop .headerBox .headerBoxText p {
+    display: block;
+    height: 100%;
     opacity: 0.4;
     color: black;
     font-size: 0.8rem;
@@ -136,26 +139,32 @@ main {
     margin-left: 0%;
     margin-right: 10%;
     padding: 0%;
+    padding-top: 5px;
   }
   .containerIndex .fixedTop .headerBox .headerBoxText2 {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-end;
     width: 50%;
+    height: 100%;
   }
   .containerIndex .fixedTop .headerBox .headerBoxText2 .headerBoxText2-img-container {
     display: flex;
-    height: 100%;
+    height: 40px;
+    align-items: flex-end;
     margin-top: 0%;
     margin-bottom: 0%;
     margin-left: 0%;
     margin-right: 3%;
   }
   .containerIndex .fixedTop .headerBox .headerBoxText2 .headerBoxText2-img-container .imgCarrito {
-    height: 25px;
+    display: flex;
+    height: 30px;
     width: auto;
   }
   .containerIndex .fixedTop .headerBox .headerBoxText2 p {
+    display: block;
+    height: 100%;
     opacity: 0.4;
     color: black;
     font-size: 0.8rem;
@@ -167,6 +176,7 @@ main {
     margin-left: 10%;
     margin-right: 0%;
     padding: 0%;
+    padding-top: 5px;
   }
   .containerIndex .navegacion .nav {
     background: linear-gradient(90deg, #ffb181 35%, #d85b8c 75%);
@@ -210,7 +220,8 @@ main {
     color: white;
     font-weight: 700;
   }
-  .containerIndex .navegacion .nav .nav-menu .nav-menu-item:hover, .containerIndex .navegacion .nav .nav-menu .nav-menu-item:active {
+  .containerIndex .navegacion .nav .nav-menu .nav-menu-item:hover,
+.containerIndex .navegacion .nav .nav-menu .nav-menu-item:active {
     background-color: #8f3f7d;
     transition: 0.6s;
   }
@@ -236,7 +247,6 @@ main {
     height: 33px;
   }
   .containerIndex .fixedTop .headerBox .headerBoxText {
-    height: 100%;
     align-items: center;
   }
   .containerIndex .fixedTop .headerBox .headerBoxText p {
@@ -247,14 +257,10 @@ main {
     font-size: 0.7rem;
   }
   .containerIndex .fixedTop .headerBox .headerBoxText2 {
-    height: 100%;
-    align-items: center;
-  }
-  .containerIndex .fixedTop .headerBox .headerBoxText2 .headerBoxText2-img-container {
     align-items: flex-end;
   }
   .containerIndex .fixedTop .headerBox .headerBoxText2 .headerBoxText2-img-container .imgCarrito {
-    height: 22.5px;
+    height: 23px;
   }
   .containerIndex .fixedTop .headerBox .headerBoxText2 p {
     margin-top: 0%;
@@ -276,38 +282,6 @@ main {
 @media screen and (max-width: 768px) {
   .animate__animated img {
     width: 75%;
-  }
-
-  .containerIndex .fixedTop .headerBox {
-    height: 33px;
-  }
-  .containerIndex .fixedTop .headerBox .headerBoxText {
-    height: 100%;
-    align-items: center;
-  }
-  .containerIndex .fixedTop .headerBox .headerBoxText p {
-    margin-top: 0%;
-    margin-bottom: 0%;
-    margin-left: 0%;
-    margin-right: 15%;
-    font-size: 0.7rem;
-  }
-  .containerIndex .fixedTop .headerBox .headerBoxText2 {
-    height: 100%;
-    align-items: center;
-  }
-  .containerIndex .fixedTop .headerBox .headerBoxText2 .headerBoxText2-img-container {
-    align-items: flex-end;
-  }
-  .containerIndex .fixedTop .headerBox .headerBoxText2 .headerBoxText2-img-container .imgCarrito {
-    height: 22.5px;
-  }
-  .containerIndex .fixedTop .headerBox .headerBoxText2 p {
-    margin-top: 0%;
-    margin-bottom: 0%;
-    margin-left: 15%;
-    margin-right: 0%;
-    font-size: 0.7rem;
   }
 
   .containerIndex .navegacion .nav {
@@ -373,6 +347,50 @@ main {
 @media screen and (max-width: 576px) {
   .animate__animated img {
     width: 100%;
+  }
+
+  .containerIndex .navegacion .nav {
+    height: 35px;
+  }
+  .containerIndex .navegacion .nav .container-logo-reduced img {
+    height: 80px;
+  }
+  .containerIndex .navegacion .nav .toggle {
+    height: 25px;
+  }
+  .containerIndex .navegacion .nav .toggle img {
+    height: 18px;
+  }
+  .containerIndex .navegacion .nav .nav-menu {
+    margin-top: 27px;
+    padding-top: 50px;
+  }
+
+  .containerIndex .fixedTop .headerBox {
+    height: 30px;
+  }
+  .containerIndex .fixedTop .headerBox .headerBoxText {
+    align-items: center;
+  }
+  .containerIndex .fixedTop .headerBox .headerBoxText p {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    margin-right: 25%;
+    font-size: 0.6rem;
+  }
+  .containerIndex .fixedTop .headerBox .headerBoxText2 {
+    align-items: flex-end;
+  }
+  .containerIndex .fixedTop .headerBox .headerBoxText2 .headerBoxText2-img-container .imgCarrito {
+    height: 20px;
+  }
+  .containerIndex .fixedTop .headerBox .headerBoxText2 p {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 25%;
+    margin-right: 0%;
+    font-size: 0.6rem;
   }
 }
 
